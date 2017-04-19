@@ -4463,6 +4463,63 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 </deviceset>
 </devicesets>
 </library>
+<library name="LEDs">
+<packages>
+<package name="KINGBRIGHT_LED">
+<smd name="P$1" x="0" y="0" dx="1.25" dy="1.1" layer="1"/>
+<smd name="P$2" x="2.35" y="0" dx="1.25" dy="1.1" layer="1" rot="R180"/>
+<text x="-0.6" y="1.1" size="0.88" layer="25">&gt;NAME</text>
+<text x="-0.6" y="-1.9" size="0.88" layer="27">&gt;VALUE</text>
+<wire x1="-0.8" y1="0.5" x2="-0.8" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="0.7" x2="-0.6" y2="0.7" width="0.127" layer="21"/>
+<wire x1="2.9" y1="0.7" x2="3.1" y2="0.7" width="0.127" layer="21"/>
+<wire x1="3.1" y1="0.7" x2="3.1" y2="0.5" width="0.127" layer="21"/>
+<wire x1="3.1" y1="-0.4" x2="3.1" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="3.1" y1="-0.7" x2="2.9" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.5" x2="-0.8" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.7" x2="-0.5" y2="-0.7" width="0.127" layer="21"/>
+<circle x="-1.2" y="0.1" radius="0.1" width="0.2" layer="21"/>
+<rectangle x1="-0.8" y1="-0.7" x2="3.1" y2="0.7" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LED">
+<pin name="A" x="-10.16" y="0" length="middle"/>
+<pin name="C" x="7.62" y="0" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LED" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0805-GREEN" package="KINGBRIGHT_LED">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Chris Miranda"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="754-1795-1-ND"/>
+<attribute name="MFR" value="Kingbright"/>
+<attribute name="MPN" value="APT2012ZGCK"/>
+<attribute name="REVIEWER" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4567,6 +4624,8 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-22PF" value="22pF"/>
 <part name="B2" library="quadparts_prebuilt" deviceset="BALUN" device="0805"/>
 <part name="J3" library="quadparts_prebuilt" deviceset="SIP-10_" device="TH-254X10-1"/>
+<part name="FRONT_LED_1" library="LEDs" deviceset="LED" device="-0805-GREEN"/>
+<part name="FRONT_LED_2" library="LEDs" deviceset="LED" device="-0805-GREEN"/>
 </parts>
 <sheets>
 <sheet>
@@ -4705,6 +4764,8 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <instance part="C6" gate="G$1" x="129.54" y="83.82" rot="R90"/>
 <instance part="B2" gate="G$1" x="142.24" y="81.28" rot="R180"/>
 <instance part="J3" gate="G$1" x="287.02" y="-40.64"/>
+<instance part="FRONT_LED_1" gate="G$1" x="71.12" y="-76.2"/>
+<instance part="FRONT_LED_2" gate="G$1" x="93.98" y="-76.2"/>
 </instances>
 <busses>
 </busses>
@@ -4909,6 +4970,11 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="U$5" gate="G$1" pin="SDO_M"/>
 <wire x1="175.26" y1="-73.66" x2="175.26" y2="-76.2" width="0.1524" layer="91"/>
 <label x="175.26" y="-76.2" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="FRONT_LED_2" gate="G$1" pin="C"/>
+<wire x1="101.6" y1="-76.2" x2="106.68" y2="-76.2" width="0.1524" layer="91"/>
+<label x="106.68" y="-76.2" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5533,6 +5599,11 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="297.18" y1="-20.32" x2="307.34" y2="-20.32" width="0.1524" layer="91"/>
 <label x="307.34" y="-20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="FRONT_LED_1" gate="G$1" pin="A"/>
+<wire x1="60.96" y1="-76.2" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
+<label x="55.88" y="-76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="3.0V" class="0">
 <segment>
@@ -5836,6 +5907,13 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="C30" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="-17.78" x2="195.58" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="-5.08" x2="226.06" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="FRONT_LED_1" gate="G$1" pin="C"/>
+<pinref part="FRONT_LED_2" gate="G$1" pin="A"/>
+<wire x1="78.74" y1="-76.2" x2="83.82" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
