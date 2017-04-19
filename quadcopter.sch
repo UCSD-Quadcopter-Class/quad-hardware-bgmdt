@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -4820,32 +4820,32 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <pinref part="BATT1" gate="G$1" pin="N"/>
 <wire x1="7.62" y1="-53.34" x2="10.16" y2="-53.34" width="0.1524" layer="91"/>
-<label x="12.7" y="-53.34" size="1.778" layer="95"/>
+<label x="10.16" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="NET_BRIDGE" gate="G$1" pin="P$1"/>
 <wire x1="48.26" y1="-53.34" x2="43.18" y2="-53.34" width="0.1524" layer="91"/>
-<label x="40.64" y="-50.8" size="1.778" layer="95"/>
+<label x="43.18" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="VOLTAGE_REGULATOR" gate="G$1" pin="GND"/>
 <wire x1="-10.16" y1="-76.2" x2="-12.7" y2="-76.2" width="0.1524" layer="91"/>
-<label x="-17.78" y="-76.2" size="1.778" layer="95"/>
+<label x="-12.7" y="-76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C25" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="-73.66" x2="25.4" y2="-73.66" width="0.1524" layer="91"/>
-<label x="27.94" y="-73.66" size="1.778" layer="95"/>
+<label x="25.4" y="-73.66" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C26" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="-88.9" x2="15.24" y2="-91.44" width="0.1524" layer="91"/>
-<label x="17.78" y="-91.44" size="1.778" layer="95"/>
+<label x="15.24" y="-91.44" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C27" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="-22.86" x2="132.08" y2="-25.4" width="0.1524" layer="91"/>
-<label x="132.08" y="-27.94" size="1.778" layer="95"/>
+<label x="132.08" y="-25.4" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="2"/>
@@ -4855,14 +4855,60 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="C31" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="0" x2="182.88" y2="0" width="0.1524" layer="91"/>
 <junction x="167.64" y="0"/>
-<wire x1="167.64" y1="-5.08" x2="165.1" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="167.64" y="-5.08"/>
-<label x="162.56" y="-5.08" size="1.778" layer="95"/>
+<label x="167.64" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="10"/>
 <wire x1="297.18" y1="-15.24" x2="307.34" y2="-15.24" width="0.1524" layer="91"/>
 <label x="307.34" y="-15.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="-5.08" x2="236.22" y2="-5.08" width="0.1524" layer="91"/>
+<label x="236.22" y="-5.08" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND@2"/>
+<wire x1="200.66" y1="-17.78" x2="200.66" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="GND@1"/>
+<wire x1="200.66" y1="-12.7" x2="205.74" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-12.7" x2="205.74" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="RES@5"/>
+<wire x1="205.74" y1="-12.7" x2="210.82" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="-12.7" x2="210.82" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="205.74" y="-12.7"/>
+<wire x1="210.82" y1="-12.7" x2="226.06" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="-12.7" x2="226.06" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="210.82" y="-12.7"/>
+<pinref part="U$5" gate="G$1" pin="RES@4"/>
+<wire x1="226.06" y1="-38.1" x2="226.06" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="-43.18" x2="226.06" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="-48.26" x2="226.06" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="-53.34" x2="226.06" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="-38.1" x2="226.06" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="226.06" y="-38.1"/>
+<pinref part="U$5" gate="G$1" pin="RES@3"/>
+<wire x1="218.44" y1="-43.18" x2="226.06" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="226.06" y="-43.18"/>
+<pinref part="U$5" gate="G$1" pin="RES@2"/>
+<wire x1="218.44" y1="-48.26" x2="226.06" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="226.06" y="-48.26"/>
+<pinref part="U$5" gate="G$1" pin="RES@1"/>
+<wire x1="218.44" y1="-53.34" x2="226.06" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="226.06" y="-53.34"/>
+<junction x="200.66" y="-12.7"/>
+<label x="226.06" y="-55.88" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="-60.96" x2="-12.7" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-12.7" y="-58.42" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="SDO_M"/>
+<wire x1="175.26" y1="-73.66" x2="175.26" y2="-76.2" width="0.1524" layer="91"/>
+<label x="175.26" y="-76.2" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5223,6 +5269,11 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="297.18" y1="-35.56" x2="307.34" y2="-35.56" width="0.1524" layer="91"/>
 <label x="307.34" y="-35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="SDA/SDI/SDO"/>
+<wire x1="167.64" y1="-48.26" x2="165.1" y2="-48.26" width="0.1524" layer="91"/>
+<label x="165.1" y="-48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -5234,6 +5285,11 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="-38.1" x2="307.34" y2="-38.1" width="0.1524" layer="91"/>
 <label x="307.34" y="-38.1" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="SCL/SPC"/>
+<wire x1="167.64" y1="-38.1" x2="165.1" y2="-38.1" width="0.1524" layer="91"/>
+<label x="165.1" y="-38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PB7" class="0">
@@ -5460,17 +5516,17 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <junction x="-12.7" y="-71.12"/>
 <pinref part="C24" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="-68.58" x2="-12.7" y2="-71.12" width="0.1524" layer="91"/>
-<label x="-20.32" y="-71.12" size="1.778" layer="95"/>
+<label x="-12.7" y="-71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="VOLTAGE_REGULATOR" gate="G$1" pin="EN"/>
 <wire x1="-10.16" y1="-81.28" x2="-12.7" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-20.32" y="-81.28" size="1.778" layer="95"/>
+<label x="-12.7" y="-81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="-30.48" x2="2.54" y2="-27.94" width="0.1524" layer="91"/>
-<label x="2.54" y="-25.4" size="1.778" layer="95" rot="R90"/>
+<label x="2.54" y="-27.94" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="8"/>
@@ -5482,7 +5538,6 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <pinref part="VOLTAGE_REGULATOR" gate="G$1" pin="OUT"/>
 <wire x1="12.7" y1="-71.12" x2="15.24" y2="-71.12" width="0.1524" layer="91"/>
-<label x="20.32" y="-68.58" size="1.778" layer="95"/>
 <junction x="15.24" y="-71.12"/>
 <wire x1="15.24" y1="-71.12" x2="15.24" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="C25" gate="G$1" pin="1"/>
@@ -5553,6 +5608,21 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="297.18" y1="-22.86" x2="307.34" y2="-22.86" width="0.1524" layer="91"/>
 <label x="307.34" y="-22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="CS_M"/>
+<wire x1="185.42" y1="-73.66" x2="185.42" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="CS_A/G"/>
+<wire x1="185.42" y1="-76.2" x2="180.34" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-76.2" x2="180.34" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-73.66" x2="180.34" y2="-81.28" width="0.1524" layer="91"/>
+<junction x="180.34" y="-73.66"/>
+<label x="180.34" y="-81.28" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="SDO_A/G"/>
+<wire x1="167.64" y1="-53.34" x2="165.1" y2="-53.34" width="0.1524" layer="91"/>
+<label x="165.1" y="-53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -5565,7 +5635,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <pinref part="NET_BRIDGE" gate="G$1" pin="P$2"/>
 <wire x1="55.88" y1="-53.34" x2="60.96" y2="-53.34" width="0.1524" layer="91"/>
-<label x="60.96" y="-50.8" size="1.778" layer="95"/>
+<label x="60.96" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="273.05" y1="34.29" x2="275.59" y2="34.29" width="0.1524" layer="91"/>
@@ -5653,22 +5723,16 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="307.34" y="-17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="-60.96" x2="-12.7" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="V" class="0">
 <segment>
 <pinref part="BATT1" gate="G$1" pin="P"/>
 <wire x1="-5.08" y1="-53.34" x2="-7.62" y2="-53.34" width="0.1524" layer="91"/>
-<label x="-15.24" y="-53.34" size="1.778" layer="95"/>
+<label x="-7.62" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="0" y1="-30.48" x2="0" y2="-27.94" width="0.1524" layer="91"/>
-<label x="0" y="-25.4" size="1.778" layer="95" rot="R90"/>
+<label x="0" y="-27.94" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -5764,6 +5828,14 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="368.3" y1="15.24" x2="368.3" y2="16.51" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="16.51" x2="372.11" y2="16.51" width="0.1524" layer="91"/>
 <junction x="372.11" y="16.51"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="CAP"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="-17.78" x2="195.58" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-5.08" x2="226.06" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
