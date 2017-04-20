@@ -4737,7 +4737,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <instance part="U$4" gate="G$1" x="287.02" y="15.24"/>
 <instance part="U$5" gate="G$1" x="193.04" y="-45.72"/>
 <instance part="BATT1" gate="G$1" x="2.54" y="-53.34"/>
-<instance part="J2" gate="G$1" x="5.08" y="-40.64" rot="R90"/>
+<instance part="J2" gate="G$1" x="5.08" y="-43.18" rot="R90"/>
 <instance part="VOLTAGE_REGULATOR" gate="G$1" x="-7.62" y="-83.82"/>
 <instance part="NET_BRIDGE" gate="G$1" x="53.34" y="-53.34"/>
 <instance part="C24" gate="G$1" x="-12.7" y="-63.5"/>
@@ -5591,7 +5591,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="-30.48" x2="2.54" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-33.02" x2="2.54" y2="-27.94" width="0.1524" layer="91"/>
 <label x="2.54" y="-27.94" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
@@ -5802,7 +5802,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="0" y1="-30.48" x2="0" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="0" y1="-33.02" x2="0" y2="-27.94" width="0.1524" layer="91"/>
 <label x="0" y="-27.94" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
