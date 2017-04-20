@@ -1,0 +1,5 @@
+We designed our LEDs to be running the entire time the quad is on.
+They are wired in series, so we do not need a resistor.
+
+We designed the package using the suggested pad sizes from this document: http://www.kingbrightusa.com/images/catalog/SPEC/APT2012ZGCK.pdf
+It is included in datasheets/LEDs/APT2012ZGCK.pdf
