@@ -1,0 +1,83 @@
+quadparts_michael.lbr
+- 0805_RESISTOR.pac
+	- Silkscreen goes over P$1 and P$2 when it should not.
+- RESISTOR.sym
+	- >VALUE should be in tValues not tNames
+- RESISTOR.dev
+	- No prefix set
+
+- RED_LED.pac
+	- Silkscreen goes over P$1 and P$2
+	- Confused where you got your pad dimensions from, but they exceed what is necessary so alright.
+- LED.sym
+	- Symbol isn't quite right, not conventional LED symbol.
+	- Symbol has C and A backwards
+- LED.dev
+	- No prefix set
+
+- MOSFET.pac
+	- Silkscreen crosses pins
+	- P$1 and P$2 have different X coordinates
+- MOSFET.sym
+	- Looks good
+- MOSFET.dec
+	- No prefix set
+
+- IMU.pac
+	- Silkscreen crosses pins
+	- No indicator for first pin/placement (indicator is reversed and is on pin 18)
+- IMU.sym
+	- Pins are mirrored, made according to bottom view when they should all be flipped
+- IMU.dev
+	- Pins are wrong because symbol is wrong
+	- No prefix set
+
+- NET_BRIDGE does not pass eagle-lint
+- NET_BRIDGE.pac
+	- Missing name
+	- Not sure if we need outline
+- NET_BRIDGE.sym
+	- Symbol missing pins?
+- NET_BRIDGE.dev
+	- No pins
+	- Missing Attributes -- Creator/Reviewer/*
+
+LEDs.lbr
+If this is unused then whatever but not sure if it is
+- LED.pac
+	- Pads are not as big as specified in the datasheet
+	- NAME and value overlap
+	- Cathode and anode are reversed (anode is pos)
+- LED.sym
+	- no pins
+- LED.pac
+	- pins not connected
+	- no prefix set
+	
+
+
+
+Schematic
+	- Voltage Regulator
+		- Obviously we don't know, but since our goal is to keep noise low, the optional
+		  bypass cap should be included
+		- No specified V_BAT line 
+	- IMU
+		- Not sure but does mirroring in schematic translate to mirroring in the board?
+			- If not, IMU will be messed up
+		- SDO_A/G should be tied high to set the bit to 1
+		- SDO_M should be tied low to set the bit to 0
+	- Motor Driver
+		- C19, C21, C23, C25 are all non-polar caps. In the motor driver schematic provided, they are polarized caps.
+		- On Library Update: "Warning Following devicesets are used in schematic but have not been found in the corresponding update library: Lab2.lbr MOSFET-S...."
+		- MOSFET in schematic =/= any in library
+		- C20, C22, C24, C26 from external library: capacitor-wima
+		- BAT_GND should be used in place of GND to reduce noise
+	- Microcontroller:
+		- Part 748421245 not in our libarary. Use corresponding part from our quadparts_prebuilt lib
+		- Same with antenna
+		- And Crystal
+	- Pin Header
+		- Pin header connected directly to voltage regulator, and does not contain GND_BAT
+	- FTDI/J1
+		- I'm guessing these should be from quadparts_prebuilt as well.

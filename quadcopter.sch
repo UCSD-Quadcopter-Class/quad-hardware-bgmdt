@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -4736,7 +4736,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <instance part="C23" gate="G$1" x="312.42" y="35.56" rot="R270"/>
 <instance part="U$4" gate="G$1" x="287.02" y="15.24"/>
 <instance part="U$5" gate="G$1" x="193.04" y="-45.72"/>
-<instance part="BATT1" gate="G$1" x="2.54" y="-53.34"/>
+<instance part="BATT1" gate="G$1" x="5.08" y="-53.34"/>
 <instance part="J2" gate="G$1" x="5.08" y="-40.64" rot="R90"/>
 <instance part="VOLTAGE_REGULATOR" gate="G$1" x="-7.62" y="-83.82"/>
 <instance part="NET_BRIDGE" gate="G$1" x="53.34" y="-53.34"/>
@@ -4880,8 +4880,8 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 </segment>
 <segment>
 <pinref part="BATT1" gate="G$1" pin="N"/>
-<wire x1="7.62" y1="-53.34" x2="10.16" y2="-53.34" width="0.1524" layer="91"/>
-<label x="10.16" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="10.16" y1="-53.34" x2="12.7" y2="-53.34" width="0.1524" layer="91"/>
+<label x="12.7" y="-53.34" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="NET_BRIDGE" gate="G$1" pin="P$1"/>
@@ -5797,8 +5797,8 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <net name="V" class="0">
 <segment>
 <pinref part="BATT1" gate="G$1" pin="P"/>
-<wire x1="-5.08" y1="-53.34" x2="-7.62" y2="-53.34" width="0.1524" layer="91"/>
-<label x="-7.62" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="-2.54" y1="-53.34" x2="-5.08" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-5.08" y="-53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>

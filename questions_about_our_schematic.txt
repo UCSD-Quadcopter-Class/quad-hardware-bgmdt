@@ -1,0 +1,5 @@
+1. Do we use the FTDI/ISP from quadparts_prebuilt, or the default one on microcontroller?
+
+2. Polar/Unpolarized cap on motor driver
+
+3. Is bat connected right? Shouldn't BAT_GND be on the minus side of BAT
