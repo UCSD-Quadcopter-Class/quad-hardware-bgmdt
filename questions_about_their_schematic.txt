@@ -32,6 +32,7 @@ quadparts_michael.lbr
 	- Pins are wrong because symbol is wrong
 	- No prefix set
 
+
 - NET_BRIDGE does not pass eagle-lint
 - NET_BRIDGE.pac
 	- Missing name

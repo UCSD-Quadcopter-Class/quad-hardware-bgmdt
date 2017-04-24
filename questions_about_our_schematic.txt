@@ -1,5 +1,193 @@
-1. Do we use the FTDI/ISP from quadparts_prebuilt, or the default one on microcontroller?
+﻿LABELS:
+    MOSFET -- U
+    Resistor -- R
 
-2. Polar/Unpolarized cap on motor driver
+Switch Symbol:
+    BAT_GND
 
-3. Is bat connected right? Shouldn't BAT_GND be on the minus side of BAT
+* Components:
+DIODE:
+   * Basics
+      * Did the designer give you the correct data sheet? 
+-Datasheet provided, not in the description section of the device though. Not sure if that is how we are supposed to have it? But the datasheet is technically provided. (This applies to all parts)
+      * Did they design for the right package?
+      * Is the item available on Digikey?
+   * Pad size and location
+      * Pad dimensions for surface mount parts
+         * Does the pad extend at least 1mm out from the side of the package, so its easy to solder?
+         * Does it otherwise match the manufacturer's recommendations?
+        -Not 100% sure what this means? 
+      * Hole diameter for through-hole parts. -No hole created
+         * Bigger than the wire.
+         * Plating will make it smaller.  Will it still be big enough?
+   * Pin Numbers and Mapping
+      * Do the pins in the schematic symbol map to the right physical pins?
+      * Do the physical pins match what’s in the data sheet?
+      * Are you sure you understand how the drawings in the data sheet are oriented?
+   * Silkscreen
+      * Are all the silk screen element in layer tPlace? 
+      * Does the silk screen show how the device should be oriented? 
+      * Does it include a part outline in tPlace?  It should.
+      * Do lines of the silkscreen cross pads?  They shouldn’t.
+      * Is the Name attribute in tPlace?  It should be
+      * Is the Value attribute in tPlace?  It shouldn’t be.
+      * Is all text in tPlace in the vector font?  None of the other fonts work. -No, it’s in Proportional
+   * Documentation
+      * Is the Value attribute in tDocu? It should be. -no, it’s in tValues
+      * Is there a bounding box in tKeepout?
+      * Did they set the prefix for the device?
+         * Resistors, R
+         * Capacitors, C
+         * Inductors, L
+         * Diodes,D
+         * Transistors,Q
+         * ICs,        U
+         * Header pins, J
+         * Jacks & Plugs,J
+         * Switches,S
+
+
+RESISTOR:
+   * Basics
+      * Did the designer give you the correct data sheet?
+      * Did they design for the right package?
+      * Is the item available on Digikey?
+   * Pad size and location
+      * Pad dimensions for surface mount parts
+         * Does the pad extend at least 1mm out from the side of the package, so its easy to solder?
+         * Does it otherwise match the manufacturer's recommendations?
+      * Hole diameter for through-hole parts. -No hole created
+         * Bigger than the wire.
+         * Plating will make it smaller.  Will it still be big enough?
+   * Pin Numbers and Mapping
+      * Do the pins in the schematic symbol map to the right physical pins?
+      * Do the physical pins match what’s in the data sheet?
+      * Are you sure you understand how the drawings in the data sheet are oriented?
+   * Silkscreen
+      * Are all the silk screen element in layer tPlace? -No silkscreen made 
+      * Does the silk screen show how the device should be oriented? -Not applicable 
+      * Does it include a part outline in tPlace?  It should. 
+      * Do lines of the silkscreen cross pads?  They shouldn’t.
+      * Is the Name attribute in tPlace?  It should be -No, it’s in tnames
+      * Is the Value attribute in tPlace?  It shouldn’t be.
+      * Is all text in tPlace in the vector font?  None of the other fonts work. -No, it’s set to proportional  
+   * Documentation
+      * Is the Value attribute in tDocu? It should be. -No, its in tValues
+      * Is there a bounding box in tKeepout?
+      * Did they set the prefix for the device? 
+         * Resistors, R
+         * Capacitors, C
+         * Inductors, L
+         * Diodes,D
+         * Transistors,Q
+         * ICs,        U
+         * Header pins, J
+         * Jacks & Plugs,J
+         * Switches,S
+
+
+
+
+IMU:
+   * Basics
+      * Did the designer give you the correct data sheet? -No, gave datasheet: https://www.luminpdf.com/viewer/Lg5gr6AmsfncWSmAi when datasheet: http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf was needed
+      * Did they design for the right package?
+      * Is the item available on Digikey?
+   * Pad size and location
+      * Pad dimensions for surface mount parts
+         * Does the pad extend at least 1mm out from the side of the package, so its easy to solder?
+         * Does it otherwise match the manufacturer's recommendations?
+      * Hole diameter for through-hole parts. 
+         * Bigger than the wire.
+         * Plating will make it smaller.  Will it still be big enough?
+   * Pin Numbers and Mapping
+      * Do the pins in the schematic symbol map to the right physical pins? 
+      * Do the physical pins match what’s in the data sheet?
+      * Are you sure you understand how the drawings in the data sheet are oriented?  -The Device pins may be placed on the wrong sides. Using the “Mirror” feature would fix this issue.
+   * Silkscreen
+      * Are all the silk screen element in layer tPlace?  -No silkscreen
+      * Does the silk screen show how the device should be oriented?
+      * Does it include a part outline in tPlace?  It should.
+      * Do lines of the silkscreen cross pads?  They shouldn’t.
+      * Is the Name attribute in tPlace?  It should be  -No, it’s in the tNames layer
+      * Is the Value attribute in tPlace?  It shouldn’t be.  -No Value attribute
+      * Is all text in tPlace in the vector font?  None of the other fonts work.  -No, it’s on Proportional layer
+   * Documentation
+      * Is the Value attribute in tDocu? It should be.
+      * Is there a bounding box in tKeepout?
+      * Did they set the prefix for the device?  -No prefix set
+         * Resistors, R
+         * Capacitors, C
+         * Inductors, L
+         * Diodes,D
+         * Transistors,Q
+         * ICs,        U
+         * Header pins, J
+         * Jacks & Plugs,J
+         * Switches,S
+
+
+
+
+MOSFET:
+   * Basics
+      * Did the designer give you the correct data sheet?
+      * Did they design for the right package?
+      * Is the item available on Digikey?
+   * Pad size and location
+      * Pad dimensions for surface mount parts
+         * Does the pad extend at least 1mm out from the side of the package, so its easy to solder?
+         * Does it otherwise match the manufacturer's recommendations?
+      * Hole diameter for through-hole parts.
+         * Bigger than the wire.
+         * Plating will make it smaller.  Will it still be big enough?
+   * Pin Numbers and Mapping
+      * Do the pins in the schematic symbol map to the right physical pins?
+      * Do the physical pins match what’s in the data sheet?
+      * Are you sure you understand how the drawings in the data sheet are oriented?
+   * Silkscreen
+      * Are all the silk screen element in layer tPlace?
+      * Does the silk screen show how the device should be oriented?
+      * Does it include a part outline in tPlace?  It should.
+      * Do lines of the silkscreen cross pads?  They shouldn’t.
+      * Is the Name attribute in tPlace?  It should be  -No, it’s in tNames
+      * Is the Value attribute in tPlace?  It shouldn’t be.
+      * Is all text in tPlace in the vector font?  None of the other fonts work.  -No, it’s in proportional
+   * Documentation
+      * Is the Value attribute in tDocu? It should be.  -No, it’s in tValues
+      * Is there a bounding box in tKeepout?
+      * Did they set the prefix for the device?
+         * Resistors, R
+         * Capacitors, C
+         * Inductors, L
+         * Diodes,D
+         * Transistors,Q
+         * ICs,        U
+         * Header pins, J
+         * Jacks & Plugs,J
+         * Switches,S
+
+
+
+
+
+
+
+
+
+
+* Schematic:
+   * Documentation
+      * Are all the names and values visible?
+      * Is the schematic layed out nicely?  Is it organized?
+   * Connectivity
+      * Are all non-connected nets labeled?
+      * Are all pins on all parts connected?  If not, why?  -I don’t think the the motors are powered by the voltage regulator. Pretty sure they need to be? Would need to double check this with the professor
+      * Are all the grounds connected? Is there only one ground net?  -No, all grounds are connected, but not to one net
+      * Are all the Vdds connected?  Is each power pin attached to the right power supply?  
+      * Are all the pins actually connected?  Or do they just look connected? (drag parts around to see)  -No, FTDI (placed on the right) is not  connected to RX1, TX1, GND. P$1 of the MOSFETS are not connected on any of the motors
+      * Are there junctions at net crossings where there shouldn’t be?  Are junctions missing where they should be present?
+   * Functionality
+      * Does the schematic do what it’s supposed to?
+      * Why was the value of each resistors and cap chosen?  -Information was provided by the professor? So Yes? 
+      * Are the decoupling caps the right size?  -Unsure how to check this.
