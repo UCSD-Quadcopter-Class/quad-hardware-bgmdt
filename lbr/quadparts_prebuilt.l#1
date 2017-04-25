@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4064,22 +4064,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="STOCK" value="" constant="no"/>
 <attribute name="TOL" value="" constant="no"/>
 <attribute name="VALUE" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="SMD-2012-0805-20" package="RESC2012X60_HS">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Chris Miranda"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DPN" value="311-20ARCT-ND"/>
-<attribute name="MFR" value="Yageo"/>
-<attribute name="MPN" value="RC0805JR-0720RL"/>
-<attribute name="VALUE" value="20"/>
 </technology>
 </technologies>
 </device>
