@@ -5413,6 +5413,11 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="165.1" y1="-25.4" x2="165.1" y2="-22.86" width="0.1524" layer="91"/>
 <label x="165.1" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="DEN_A/G"/>
+<wire x1="210.82" y1="-73.66" x2="210.82" y2="-76.2" width="0.1524" layer="91"/>
+<label x="210.82" y="-76.2" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="N$18" class="0">
 <segment>

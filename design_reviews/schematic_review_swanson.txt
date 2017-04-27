@@ -1,10 +1,10 @@
-1.  DEN_A/G is not connected
+1.  DEN_A/G is not connected - fixed
 
-2.  missing pullup resistors
+2.  missing pullup resistors - fixed
 
 3.  RFP and RFN on your balun are backwards.  Pins 1 and 5 are backwards too.
 
-4.  The resistance for your green leds is too high.  Think about why.
+4.  The resistance for your green leds is too high.  Think about why. - fixed
 
 
 other notes:
