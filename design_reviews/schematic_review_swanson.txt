@@ -1,0 +1,19 @@
+1.  DEN_A/G is not connected
+
+2.  missing pullup resistors
+
+3.  RFP and RFN on your balun are backwards.  Pins 1 and 5 are backwards too.
+
+4.  The resistance for your green leds is too high.  Think about why.
+
+
+other notes:
+
+1.  It's conventionla to put VCC at the top and gnd on the bottom.  You have them on side in your motor contorllers.
+
+2.  It's confusing that your the power symbol attached ot your vbat lines is labeled VCC  VBAT would be much clearer.
+
+3.  You could have reused the LED symbol for your custom LEDs
+
+4.  I'm worried your custom LEDs may be too dimm.  Check upper-left graph on page 3 of the datasheet.
+
