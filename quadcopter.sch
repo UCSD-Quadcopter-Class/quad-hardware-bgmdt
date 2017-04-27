@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4308,7 +4308,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <part name="U$4" library="quadparts_jay" deviceset="MOFSET_SI2302CDS-T1-E3CT-ND" device=""/>
 <part name="U$5" library="quadparts_jay" deviceset="IMU_497-14946-1-ND" device=""/>
 <part name="BATT1" library="quadparts_prebuilt" deviceset="BATTERY" device="-HUBSAN-W/HOLDER"/>
-<part name="J2" library="quadparts_jay" deviceset="MALE_HEADER_2POS" device="-2X1-0.1IN"/>
+<part name="POWER_SWITCH" library="quadparts_jay" deviceset="MALE_HEADER_2POS" device="-2X1-0.1IN"/>
 <part name="VOLTAGE_REGULATOR" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device=""/>
 <part name="NET_BRIDGE" library="quadparts_jay" deviceset="NET_BRIDGE" device=""/>
 <part name="C24" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
@@ -4334,9 +4334,9 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <part name="R1" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-22PF" value="22pF"/>
 <part name="B2" library="quadparts_prebuilt" deviceset="BALUN" device="0805"/>
-<part name="J3" library="quadparts_prebuilt" deviceset="SIP-10_" device="TH-254X10-1"/>
-<part name="FRONT_LED_1" library="LEDs" deviceset="LED" device="-0805-GREEN"/>
-<part name="FRONT_LED_2" library="LEDs" deviceset="LED" device="-0805-GREEN"/>
+<part name="DEBUGGING_HEADER" library="quadparts_prebuilt" deviceset="SIP-10_" device="TH-254X10-1"/>
+<part name="FRONT_LED_1" library="LEDs" deviceset="LED" device="-0805-GREEN" value="GREEN"/>
+<part name="FRONT_LED_2" library="LEDs" deviceset="LED" device="-0805-GREEN" value="GREEN"/>
 <part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-20" value="20"/>
@@ -4423,7 +4423,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <instance part="U$4" gate="G$1" x="290.83" y="19.05" rot="R90"/>
 <instance part="U$5" gate="G$1" x="193.04" y="-45.72"/>
 <instance part="BATT1" gate="G$1" x="5.08" y="-53.34"/>
-<instance part="J2" gate="G$1" x="5.08" y="-40.64" rot="R90"/>
+<instance part="POWER_SWITCH" gate="G$1" x="5.08" y="-40.64" rot="R90"/>
 <instance part="VOLTAGE_REGULATOR" gate="G$1" x="-7.62" y="-83.82"/>
 <instance part="NET_BRIDGE" gate="G$1" x="53.34" y="-53.34"/>
 <instance part="C24" gate="G$1" x="-12.7" y="-63.5"/>
@@ -4449,7 +4449,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <instance part="R1" gate="G$1" x="101.6" y="99.06" rot="R90"/>
 <instance part="C6" gate="G$1" x="129.54" y="83.82" rot="R90"/>
 <instance part="B2" gate="G$1" x="142.24" y="81.28" rot="R180"/>
-<instance part="J3" gate="G$1" x="287.02" y="-40.64"/>
+<instance part="DEBUGGING_HEADER" gate="G$1" x="287.02" y="-40.64"/>
 <instance part="FRONT_LED_1" gate="G$1" x="71.12" y="-76.2"/>
 <instance part="FRONT_LED_2" gate="G$1" x="71.12" y="-96.52"/>
 <instance part="R2" gate="G$1" x="165.1" y="-30.48" rot="R90"/>
@@ -4467,6 +4467,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <wire x1="185.42" y1="158.75" x2="187.96" y2="158.75" width="0.1524" layer="91"/>
 <label x="187.96" y="158.75" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP3" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="NET_BRIDGE" gate="G$1" pin="P$1"/>
@@ -4505,7 +4506,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="167.64" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="10"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="10"/>
 <wire x1="297.18" y1="-15.24" x2="307.34" y2="-15.24" width="0.1524" layer="91"/>
 <label x="307.34" y="-15.24" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -4569,6 +4570,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <wire x1="123.19" y1="152.4" x2="125.73" y2="152.4" width="0.1524" layer="91"/>
 <label x="125.73" y="152.4" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP2" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="CLKI"/>
@@ -4889,7 +4891,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="C18" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="5"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="5"/>
 <wire x1="297.18" y1="-27.94" x2="307.34" y2="-27.94" width="0.1524" layer="91"/>
 <label x="307.34" y="-27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -4909,7 +4911,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="C16" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="3"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="3"/>
 <wire x1="297.18" y1="-33.02" x2="307.34" y2="-33.02" width="0.1524" layer="91"/>
 <label x="307.34" y="-33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -4929,7 +4931,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="C20" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="4"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="4"/>
 <wire x1="297.18" y1="-30.48" x2="307.34" y2="-30.48" width="0.1524" layer="91"/>
 <label x="307.34" y="-30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -4950,6 +4952,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <wire x1="123.19" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
 <label x="142.24" y="142.24" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="RX0" class="0">
@@ -4961,6 +4964,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <wire x1="123.19" y1="144.78" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
 <label x="142.24" y="144.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="PD7" class="0">
@@ -5000,6 +5004,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <wire x1="185.42" y1="151.13" x2="187.96" y2="151.13" width="0.1524" layer="91"/>
 <label x="187.96" y="151.13" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP3" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="RX1" class="0">
@@ -5011,6 +5016,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <wire x1="185.42" y1="148.59" x2="187.96" y2="148.59" width="0.1524" layer="91"/>
 <label x="187.96" y="148.59" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -5020,7 +5026,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="30.48" y="73.66" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="-35.56" x2="307.34" y2="-35.56" width="0.1524" layer="91"/>
 <label x="307.34" y="-35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -5040,7 +5046,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="30.48" y="76.2" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="-38.1" x2="307.34" y2="-38.1" width="0.1524" layer="91"/>
 <label x="307.34" y="-38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -5094,7 +5100,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="C22" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="6"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="6"/>
 <wire x1="297.18" y1="-25.4" x2="307.34" y2="-25.4" width="0.1524" layer="91"/>
 <label x="307.34" y="-25.4" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -5153,6 +5159,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="130.81" y1="139.7" x2="123.19" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5286,12 +5293,12 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="-12.7" y="-81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="POWER_SWITCH" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="-30.48" x2="2.54" y2="-27.94" width="0.1524" layer="91"/>
 <label x="2.54" y="-27.94" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="8"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="8"/>
 <wire x1="297.18" y1="-20.32" x2="307.34" y2="-20.32" width="0.1524" layer="91"/>
 <label x="307.34" y="-20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -5313,6 +5320,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <junction x="15.24" y="-71.12"/>
 <wire x1="15.24" y1="-71.12" x2="15.24" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="C25" gate="G$1" pin="1"/>
+<label x="15.24" y="-71.12" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="106.68" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
@@ -5376,7 +5384,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="182.88" y="17.78" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="7"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="7"/>
 <wire x1="297.18" y1="-22.86" x2="307.34" y2="-22.86" width="0.1524" layer="91"/>
 <label x="307.34" y="-22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -5500,7 +5508,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="317.5" y="2.54" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="9"/>
+<pinref part="DEBUGGING_HEADER" gate="G$1" pin="9"/>
 <wire x1="297.18" y1="-17.78" x2="307.34" y2="-17.78" width="0.1524" layer="91"/>
 <label x="307.34" y="-17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -5517,7 +5525,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="-5.08" y="-53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="POWER_SWITCH" gate="G$1" pin="2"/>
 <wire x1="0" y1="-30.48" x2="0" y2="-27.94" width="0.1524" layer="91"/>
 <label x="0" y="-27.94" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -5638,9 +5646,48 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="78.74" y1="-76.2" x2="81.28" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="FRONT_LED_2" gate="G$1" pin="C"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="-96.52" x2="81.28" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,88.9,45.72,A0,,,,,"/>
+<approved hash="106,1,88.9,43.18,A1,,,,,"/>
+<approved hash="106,1,88.9,40.64,A2,,,,,"/>
+<approved hash="106,1,88.9,38.1,A3,,,,,"/>
+<approved hash="106,1,88.9,35.56,A4,,,,,"/>
+<approved hash="106,1,88.9,33.02,A5,,,,,"/>
+<approved hash="106,1,88.9,30.48,A6,,,,,"/>
+<approved hash="106,1,88.9,27.94,A7,,,,,"/>
+<approved hash="106,1,88.9,48.26,AREF,,,,,"/>
+<approved hash="106,1,33.02,88.9,PB4,,,,,"/>
+<approved hash="106,1,33.02,66.04,PD4,,,,,"/>
+<approved hash="106,1,33.02,63.5,PD5,,,,,"/>
+<approved hash="106,1,33.02,60.96,PD6,,,,,"/>
+<approved hash="106,1,33.02,58.42,PD7,,,,,"/>
+<approved hash="106,1,33.02,48.26,PE2,,,,,"/>
+<approved hash="106,1,33.02,38.1,PE6,,,,,"/>
+<approved hash="106,1,33.02,35.56,PE7,,,,,"/>
+<approved hash="106,1,33.02,30.48,PG0,,,,,"/>
+<approved hash="106,1,33.02,27.94,PG1,,,,,"/>
+<approved hash="106,1,33.02,25.4,PG2,,,,,"/>
+<approved hash="106,1,33.02,17.78,PG5,,,,,"/>
+<approved hash="106,1,88.9,88.9,RSTON,,,,,"/>
+<approved hash="106,1,33.02,99.06,SSN,,,,,"/>
+<approved hash="113,1,347.472,93.98,U$1,,,,,"/>
+<approved hash="113,1,287.782,93.98,U$2,,,,,"/>
+<approved hash="113,1,344.932,17.78,U$3,,,,,"/>
+<approved hash="113,1,287.782,19.05,U$4,,,,,"/>
+<approved hash="113,1,1.46473,-27.6186,POWER_SWITCH,,,,,"/>
+<approved hash="113,1,111.76,56.6208,Y1,,,,,"/>
+<approved hash="113,1,303.316,-26.8647,DEBUGGING_HEADER,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
