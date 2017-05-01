@@ -6,36 +6,36 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -4282,28 +4282,24 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <part name="D1" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
-<part name="C16" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
 <part name="U$1" library="quadparts_jay" deviceset="MOFSET_SI2302CDS-T1-E3CT-ND" device=""/>
 <part name="M2" library="Andranik-Lab4" deviceset="MOTOR_PADS" device=""/>
 <part name="D2" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="R9" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
-<part name="C18" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C19" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
 <part name="U$2" library="quadparts_jay" deviceset="MOFSET_SI2302CDS-T1-E3CT-ND" device=""/>
 <part name="M3" library="Andranik-Lab4" deviceset="MOTOR_PADS" device=""/>
 <part name="D3" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R12" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
-<part name="C20" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C21" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
 <part name="U$3" library="quadparts_jay" deviceset="MOFSET_SI2302CDS-T1-E3CT-ND" device=""/>
 <part name="M4" library="Andranik-Lab4" deviceset="MOTOR_PADS" device=""/>
 <part name="D4" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="R13" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R14" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
-<part name="C22" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C23" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
 <part name="U$4" library="quadparts_jay" deviceset="MOFSET_SI2302CDS-T1-E3CT-ND" device=""/>
 <part name="U$5" library="quadparts_jay" deviceset="IMU_497-14946-1-ND" device=""/>
@@ -4344,6 +4340,10 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <part name="JP2" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="PTH"/>
 <part name="JP3" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="PTH"/>
 <part name="J4" library="quadparts_prebuilt" deviceset="AVR_SPI_PRG_6" device="NS"/>
+<part name="C9" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="C10" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="C11" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="C12" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -4397,28 +4397,24 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <instance part="D1" gate="G$1" x="359.41" y="121.92" rot="R90"/>
 <instance part="R7" gate="G$1" x="335.28" y="91.44"/>
 <instance part="R8" gate="G$1" x="341.63" y="86.36" rot="R90"/>
-<instance part="C16" gate="G$1" x="330.2" y="87.63"/>
 <instance part="C17" gate="G$1" x="328.93" y="119.38"/>
 <instance part="U$1" gate="G$1" x="350.52" y="93.98" rot="R90"/>
 <instance part="M2" gate="G$1" x="283.21" y="118.11"/>
 <instance part="D2" gate="G$1" x="299.72" y="121.92" rot="R90"/>
 <instance part="R9" gate="G$1" x="275.59" y="91.44"/>
 <instance part="R10" gate="G$1" x="281.94" y="86.36" rot="R90"/>
-<instance part="C18" gate="G$1" x="270.51" y="87.63"/>
 <instance part="C19" gate="G$1" x="269.24" y="119.38"/>
 <instance part="U$2" gate="G$1" x="290.83" y="93.98" rot="R90"/>
 <instance part="M3" gate="G$1" x="340.36" y="41.91"/>
 <instance part="D3" gate="G$1" x="356.87" y="45.72" rot="R90"/>
 <instance part="R11" gate="G$1" x="332.74" y="15.24"/>
 <instance part="R12" gate="G$1" x="339.09" y="10.16" rot="R90"/>
-<instance part="C20" gate="G$1" x="327.66" y="11.43"/>
 <instance part="C21" gate="G$1" x="326.39" y="43.18"/>
 <instance part="U$3" gate="G$1" x="347.98" y="17.78" rot="R90"/>
 <instance part="M4" gate="G$1" x="283.21" y="43.18"/>
 <instance part="D4" gate="G$1" x="299.72" y="46.99" rot="R90"/>
 <instance part="R13" gate="G$1" x="275.59" y="16.51"/>
 <instance part="R14" gate="G$1" x="281.94" y="11.43" rot="R90"/>
-<instance part="C22" gate="G$1" x="270.51" y="12.7"/>
 <instance part="C23" gate="G$1" x="269.24" y="44.45"/>
 <instance part="U$4" gate="G$1" x="290.83" y="19.05" rot="R90"/>
 <instance part="U$5" gate="G$1" x="193.04" y="-45.72"/>
@@ -4459,6 +4455,10 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <instance part="JP2" gate="G$1" x="118.11" y="144.78"/>
 <instance part="JP3" gate="G$1" x="180.34" y="151.13"/>
 <instance part="J4" gate="G$1" x="127" y="124.46"/>
+<instance part="C9" gate="G$1" x="270.51" y="12.7"/>
+<instance part="C10" gate="G$1" x="327.66" y="11.43"/>
+<instance part="C11" gate="G$1" x="330.2" y="87.63"/>
+<instance part="C12" gate="G$1" x="270.51" y="87.63"/>
 </instances>
 <busses>
 </busses>
@@ -4888,7 +4888,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="259.08" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <junction x="270.51" y="91.44"/>
-<pinref part="C18" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_HEADER" gate="G$1" pin="5"/>
@@ -4908,7 +4908,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="318.77" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <junction x="330.2" y="91.44"/>
-<pinref part="C16" gate="G$1" pin="1"/>
+<pinref part="C11" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_HEADER" gate="G$1" pin="3"/>
@@ -4928,7 +4928,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="316.23" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <junction x="327.66" y="15.24"/>
-<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_HEADER" gate="G$1" pin="4"/>
@@ -5097,7 +5097,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="259.08" y="16.51" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <junction x="270.51" y="16.51"/>
-<pinref part="C22" gate="G$1" pin="1"/>
+<pinref part="C9" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_HEADER" gate="G$1" pin="6"/>
@@ -5442,10 +5442,10 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="281.94" y1="5.08" x2="293.37" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="6.35" x2="281.94" y2="5.08" width="0.1524" layer="91"/>
 <junction x="281.94" y="5.08"/>
-<pinref part="C22" gate="G$1" pin="2"/>
 <pinref part="U$4" gate="G$1" pin="S"/>
 <wire x1="293.37" y1="8.89" x2="293.37" y2="5.08" width="0.1524" layer="91"/>
-<label x="260.35" y="3.81" size="1.27" layer="95" rot="R270" xref="yes"/>
+<label x="260.35" y="3.81" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="C9" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="269.24" y1="113.03" x2="269.24" y2="114.3" width="0.1524" layer="91"/>
@@ -5453,9 +5453,9 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="269.24" y="113.03" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="269.24" y1="38.1" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="36.83" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
 <pinref part="C23" gate="G$1" pin="-"/>
-<label x="269.24" y="38.1" size="1.27" layer="95" rot="R270" xref="yes"/>
+<label x="269.24" y="36.83" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="270.51" y1="80.01" x2="270.51" y2="82.55" width="0.1524" layer="91"/>
@@ -5467,10 +5467,10 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="281.94" y1="80.01" x2="293.37" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="81.28" x2="281.94" y2="80.01" width="0.1524" layer="91"/>
 <junction x="281.94" y="80.01"/>
-<pinref part="C18" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="G$1" pin="S"/>
 <wire x1="293.37" y1="83.82" x2="293.37" y2="80.01" width="0.1524" layer="91"/>
-<label x="260.35" y="78.74" size="1.27" layer="95" rot="R270" xref="yes"/>
+<label x="260.35" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="328.93" y1="113.03" x2="328.93" y2="114.3" width="0.1524" layer="91"/>
@@ -5487,15 +5487,15 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="341.63" y1="80.01" x2="353.06" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="341.63" y1="81.28" x2="341.63" y2="80.01" width="0.1524" layer="91"/>
 <junction x="341.63" y="80.01"/>
-<pinref part="C16" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="S"/>
 <wire x1="353.06" y1="83.82" x2="353.06" y2="80.01" width="0.1524" layer="91"/>
 <label x="320.04" y="78.74" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="C11" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="326.39" y1="36.83" x2="326.39" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="326.39" y1="35.56" x2="326.39" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="-"/>
-<label x="326.39" y="36.83" size="1.27" layer="95" rot="R270" xref="yes"/>
+<label x="326.39" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="327.66" y1="3.81" x2="327.66" y2="6.35" width="0.1524" layer="91"/>
@@ -5507,10 +5507,10 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="339.09" y1="3.81" x2="350.52" y2="3.81" width="0.1524" layer="91"/>
 <wire x1="339.09" y1="5.08" x2="339.09" y2="3.81" width="0.1524" layer="91"/>
 <junction x="339.09" y="3.81"/>
-<pinref part="C20" gate="G$1" pin="2"/>
 <pinref part="U$3" gate="G$1" pin="S"/>
 <wire x1="350.52" y1="7.62" x2="350.52" y2="3.81" width="0.1524" layer="91"/>
 <label x="317.5" y="2.54" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_HEADER" gate="G$1" pin="9"/>
