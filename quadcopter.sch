@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4724,6 +4724,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="B2" gate="G$1" pin="IN"/>
 <wire x1="152.4" y1="74.93" x2="144.78" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="74.93" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
+<junction x="157.48" y="93.98"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -4893,7 +4894,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="307.34" y="-33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PE3" class="2">
+<net name="PE3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PE3(OC3A/AIN1)"/>
 <wire x1="33.02" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
@@ -5538,20 +5539,17 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 </net>
 <net name="FILTERED1" class="2">
 <segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="270.51" y1="16.51" x2="270.51" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="26.67" x2="264.16" y2="26.67" width="0.1524" layer="91"/>
 <label x="264.16" y="26.67" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="281.94" y1="26.67" x2="281.94" y2="16.51" width="0.1524" layer="91"/>
 <junction x="281.94" y="16.51"/>
-<wire x1="280.67" y1="16.51" x2="281.94" y2="16.51" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="G"/>
 <wire x1="281.94" y1="16.51" x2="283.21" y2="16.51" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="270.51" y1="16.51" x2="280.67" y2="16.51" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="270.51" y1="16.51" x2="270.51" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="16.51" x2="281.94" y2="16.51" width="0.1524" layer="91"/>
 <junction x="270.51" y="16.51"/>
 </segment>
 </net>
