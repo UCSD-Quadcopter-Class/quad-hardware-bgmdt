@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4063,18 +4063,18 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-20.32" y1="-22.86" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-22.86" x2="20.32" y2="22.86" width="0.254" layer="94"/>
 <wire x1="20.32" y1="22.86" x2="-20.32" y2="22.86" width="0.254" layer="94"/>
-<text x="22.86" y="15.24" size="1.27" layer="95" rot="MR0" align="bottom-right">&gt;NAME</text>
+<text x="22.86" y="15.24" size="1.27" layer="95" font="vector" rot="MR0" align="bottom-right">&gt;NAME</text>
 </symbol>
 <symbol name="MALE_HEADER_2POS">
 <description>2 pin single inline pin header, socket, or connector</description>
-<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <wire x1="0" y1="0" x2="0" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="0" y1="7.62" x2="6.35" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="5.08" x2="5.08" y2="5.08" width="0.6096" layer="94"/>
 <wire x1="6.35" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
 <wire x1="6.35" y1="7.62" x2="6.35" y2="0" width="0.4064" layer="94"/>
-<text x="6.858" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="6.858" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <pin name="1" x="10.16" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="10.16" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
@@ -4086,7 +4086,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MOFSET_SI2302CDS-T1-E3CT-ND" uservalue="yes">
+<deviceset name="MOFSET_SI2302CDS-T1-E3CT-ND" prefix="U" uservalue="yes">
 <description>&lt;h1&gt; This is a MOFSET &lt;/h1&gt;
 I have no idea what a MOFSET does, but if you were looking for one, this is it.</description>
 <gates>
@@ -4112,7 +4112,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 </device>
 </devices>
 </deviceset>
-<deviceset name="IMU_497-14946-1-ND">
+<deviceset name="IMU_497-14946-1-ND" prefix="U">
 <gates>
 <gate name="G$1" symbol="IMU_497-14946-1-ND" x="0" y="0"/>
 </gates>

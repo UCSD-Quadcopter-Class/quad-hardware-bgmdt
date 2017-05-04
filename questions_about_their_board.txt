@@ -1,0 +1,82 @@
+Board Design Review
+From last time unfixed:
+- 0805_RESISTOR.pac
+	- Silkscreen goes over P$1 and P$2 when it should not.
+- RED_LED.pac
+	- Silkscreen goes over P$1 and P$2
+- MOSFET.pac
+	- Silkscreen crosses pins
+	- P$1 and P$2 have different X coordinates
+- IMU.pac
+	- Silkscreen crosses pins\
+
+Schematic
+- You have text in the nets layer, may want to move to Docu but idk if it matters
+- THe filter cap on the input of the voltage regulator should be connected to BAT_GND (Swanson)
+- Your motor drivers should be connected to BAT_GND, not GND
+
+
+BOARD
+Antenna and Antenna Driver
+	Do all the traces for the antenna driver reside in layer 1? yes
+	Is the trace between the balun and the antenna extra-thick? yes
+	Are the other two capacitors close to the balun? yes
+	Is the trace between the balun and the antenna short (no longer than the corresponding trace on the red board)? yes
+	Is there a ground pour in layer Top surrounding the antenna driver components? yes
+	Is there a ground pour in layer 2 surround the antenna driver?yes
+	Are there vias connecting the two pours and roughly surrounding the antenna driver? are they connected to GND? yes
+	Is one of the antenna's pads surrounded by the pours?yes
+	Is there ample space around the antenna that is free of metal on all four layers?yes
+	Does the layout roughly match the layout on the red board?yes
+	Are there any traces routed through the antenna driver area that are not related to the driver? no
+
+Power and Ground
+	Does the VBAT power plane reach under all four motor drivers?yes
+	Is the VBAT power plane wider than 0.5mm everywhere?yes
+	Does the 3V power plane run under microcontroller and near the IMU's power pins?yes
+	Does the combination of the BAT_GND and GND ground plane extend to almost every area of the board (with the exception of the area round the antenna)?
+	Are the VBAT and 3V power pours both in the same metal layer (probably layer 2)? y
+	Are there any parts of the power our ground pours that are very narrow?  They should be no "necks" narrower than 0.5mm. no
+	Does the VBAT power plane extend to the battery connector? n
+IMU
+	Is the IMU at the center of the board?y
+	Are the capacitors specified in the IMU datasheet located as close as is practical to the IMU?y
+	Is the IMU oriented so that the X and Y axes are aligned with the pitch and roll axis of the quadcopter?y
+	Are there any traces under the IMU?  Is there anything other than ground plane under the IMU?n
+Headers
+	Are the two FTDI headers oriented so the silkscreen is labels for the pins are on the board and the pins will protrude off the board?y
+Microcontroller
+	Is the layout of resonator and the associated caps similar to the layout of those parts on the red board?y
+	Do all the traces for the resonator and its associated caps lie in layer Top?y
+	Are the decoupling caps for the microcontroller located as close as possible to power pins of the microcontroller?y
+Power Supply
+	Are the caps associated with the voltage regulator located near the regulator?y
+	Is the voltage regulator located near the battery connector?y
+	Does the 3V power plane run underneath the voltage regulator?y
+Motor Drivers
+	Are the traces that carry large currents thick enough?y
+Aesthetics
+	Does does the layout look nice?y
+	Are nearby parts aligned?y
+	Are the reference designators arranged so they don't overlap eachother or pads?n
+Mechanical
+	Given the location of the motors, will the props clear the board (except for the arms)?y
+	Is the "cup" for the motors the right diameter?y
+	Are there any large internal holes in the board?n
+	Is the board roughly symmetrical?y
+Checks
+	Does DRC check pass without errors? lol no, 1056 errors
+		For some of the clearance errors, may have to move the wires by hand
+		For keepout errors, some don't matter as long as components don't overlap
+		Lots of airwires
+	If DRC doesn't pass with no errors, does the team have good explanations for why the errors are ok?
+	Does DFM check pass with no show stoppers?
+	Does Eagle Lint pass?
+Gerber Files
+	Are areas around the antenna clear in the gerber files?
+	Are the power planes where you expect them to be in the gerber files?
+	Are there any traces that cross in an unexpected way in the gerber files?
+	Are there any elements that should be in the silkscreen that show up in metal layers?
+	Are there any elements that should be in the metal layers but that show up on the silkscreen?
+	Does the board outline match what was draw in the brd file? 
+	Does FreeDFM pass?
