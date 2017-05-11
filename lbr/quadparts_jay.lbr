@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="4" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="no" active="yes"/>
@@ -767,6 +767,10 @@
 <rectangle x1="4.6228" y1="3.81" x2="6.4516" y2="3.9116" layer="21"/>
 <rectangle x1="-0.0508" y1="3.9116" x2="2.5908" y2="4.0132" layer="21"/>
 <rectangle x1="2.9972" y1="3.9116" x2="6.4516" y2="4.0132" layer="21"/>
+<wire x1="-0.15" y1="-0.2" x2="-0.15" y2="4.15" width="0.127" layer="39"/>
+<wire x1="-0.15" y1="4.15" x2="6.55" y2="4.15" width="0.127" layer="39"/>
+<wire x1="6.55" y1="4.15" x2="6.55" y2="-0.2" width="0.127" layer="39"/>
+<wire x1="6.55" y1="-0.2" x2="-0.15" y2="-0.2" width="0.127" layer="39"/>
 </package>
 <package name="DOGE">
 <rectangle x1="0.762" y1="0.3556" x2="1.0668" y2="0.4572" layer="21"/>
@@ -938,6 +942,10 @@
 <rectangle x1="0.254" y1="3.6068" x2="0.4572" y2="3.7084" layer="21"/>
 <rectangle x1="2.1844" y1="3.6068" x2="2.3876" y2="3.7084" layer="21"/>
 <rectangle x1="2.1844" y1="3.7084" x2="2.3876" y2="3.81" layer="21"/>
+<wire x1="-0.35" y1="4.1" x2="-0.35" y2="0" width="0.127" layer="39"/>
+<wire x1="-0.35" y1="0" x2="6.8" y2="0" width="0.127" layer="39"/>
+<wire x1="6.8" y1="0" x2="6.8" y2="4.1" width="0.127" layer="39"/>
+<wire x1="6.8" y1="4.1" x2="-0.35" y2="4.1" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
