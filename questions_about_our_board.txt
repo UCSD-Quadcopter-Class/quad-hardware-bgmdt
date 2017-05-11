@@ -1,4 +1,12 @@
-﻿CSE 190 – Quadcopter Class
+﻿ADD SPACE TO ANTENNAE
+ADD VBAT UNDER MOTORS
+SMALL CIRCLES
+CENTERED CIRCLE?
+
+
+
+
+CSE 190 – Quadcopter Class
 board review
 Group 3 (Tawfic and Michael) review of group 4 (Austin and Chris)
 * Antenna and Antenna Driver
@@ -24,6 +32,7 @@ Group 3 (Tawfic and Michael) review of group 4 (Austin and Chris)
       * Same parts are connected, but layout is different. Traces are longer than they need to be.
    * Are there any traces routed through the antenna driver area that are not related to the driver? 
       * No
+
 * Power and Ground
    * Does the VBAT power plane reach under all four motor drivers?
       * No (needs to extend into the arms a little)
@@ -40,6 +49,7 @@ Group 3 (Tawfic and Michael) review of group 4 (Austin and Chris)
       * No, looks good.
    * Does the VBAT power plane extend to the battery connector?
       * No (is close, but doesn’t extend to it)
+
 * IMU
    * Is the IMU at the center of the board?
       * yes
@@ -49,9 +59,11 @@ Group 3 (Tawfic and Michael) review of group 4 (Austin and Chris)
       * yes
    * Are there any traces under the IMU?  Is there anything other than ground plane under the IMU?
       * There are 3v traces under the imu, but I think this is fine?
+
 * Headers
    * Are the two FTDI headers oriented so the silkscreen is labels for the pins are on the board and the pins will protrude off the board?
       * yes
+
 * Microcontroller
    * Is the layout of resonator and the associated caps similar to the layout of those parts on the red board?
       * Yes. Redboard has smaller parts and can afford to make everything closer.
@@ -59,6 +71,7 @@ Group 3 (Tawfic and Michael) review of group 4 (Austin and Chris)
       * no. some of the signals go through different layers (eg. N$3, AVDD, N$4)
    * Are the decoupling caps for the microcontroller located as close as possible to power pins of the microcontroller?
       * They could be closer to microcontroller and further from antenna
+
 * Power Supply
    * Are the caps associated with the voltage regulator located near the regulator?
       * yes
@@ -69,6 +82,7 @@ Group 3 (Tawfic and Michael) review of group 4 (Austin and Chris)
 * Motor Drivers
    * Are the traces that carry large currents thick enough?
       * yes
+
 * Aesthetics
    * Does does the layout look nice?
       * yes
@@ -76,6 +90,7 @@ Group 3 (Tawfic and Michael) review of group 4 (Austin and Chris)
       * usually
    * Are the reference designators arranged so they don't overlap eachother or pads?
       * Mostly. Some of the prebuilt parts have already-jumbled designators
+
 * Mechanical
    * Given the location of the motors, will the props clear the board (except for the arms)?
       * There will be just 2 or 3 mm overlap, which seems decent
@@ -97,6 +112,7 @@ Group 3 (Tawfic and Michael) review of group 4 (Austin and Chris)
       * FTDI Cap isn’t in our library
       * Long list of errors can be seen here: https://hastebin.com/arinujaduy.pas
 * Gerber Files
+
    * Can’t check gerber files, wasn’t given any (also don’t know how even if I was)
    * Are areas around the antenna clear in the gerber files?
    * Are the power planes where you expect them to be in the gerber files?
@@ -105,3 +121,8 @@ Group 3 (Tawfic and Michael) review of group 4 (Austin and Chris)
    * Are there any elements that should be in the metal layers but that show up on the silkscreen?
    * Does the board outline match what was draw in the brd file? 
    * Does FreeDFM pass?
+
+EagleLint
+    Few pieces not in library -- FTDI Capacitor
+    Few others as well... --- Microcontroller
+
