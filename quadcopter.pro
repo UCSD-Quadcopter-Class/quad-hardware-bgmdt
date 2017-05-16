@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : M:/Documents/eagle/quad-hardware-bgmdt/quadcopter.brd
 
-Start at      : 03:55:03 (5/11/2017)
-End at        : 03:55:11 (5/11/2017)
-Elapsed time  : 00:00:07
+Start at      : 21:25:13 (5/15/2017)
+End at        : 21:25:17 (5/15/2017)
+Elapsed time  : 00:00:02
 
-Signals       :    68   RoutingGrid: 12.5 mil  Layers: 2
-Connections   :   168   predefined:  29 ( 65 Vias )
+Signals       :    68   RoutingGrid: 6.25 mil  Layers: 2
+Connections   :   165   predefined:  159 ( 78 Vias )
 
-Router memory :   871624
+Router memory :   3055504
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:03  00:00:01  00:00:01  00:00:01  00:00:01
-Number of Ripups  :         0         7         0         0         0         0
-max. Level        :         0         2         0         0         0         0
-max. Total        :         0        33         0         0         0         0
+Time per pass     :  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         0         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :         1       130       130       130       130       130
-Vias              :         0        93        32        21        20        21
-Resolution        :    17.9 %    94.6 %    94.6 %    94.6 %    94.6 %    94.6 %
+Routed            :         6         6         6         6         6
+Vias              :        11         6         4         2         2
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 94.5% finished. Polygons may have fallen apart.
+Final             : 100.0% finished

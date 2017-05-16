@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3818,11 +3818,6 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="-12.7" y="-58.42" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="SDO_M"/>
-<wire x1="175.26" y1="-73.66" x2="175.26" y2="-76.2" width="0.1524" layer="91"/>
-<label x="175.26" y="-76.2" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="-96.52" x2="93.98" y2="-96.52" width="0.1524" layer="91"/>
 <label x="93.98" y="-96.52" size="1.778" layer="95" xref="yes"/>
@@ -4557,7 +4552,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <wire x1="180.34" y1="-76.2" x2="180.34" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="-73.66" x2="180.34" y2="-81.28" width="0.1524" layer="91"/>
 <junction x="180.34" y="-73.66"/>
-<label x="180.34" y="-81.28" size="1.778" layer="95" rot="R270" xref="yes"/>
+<label x="180.34" y="-81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="SDO_A/G"/>
@@ -4593,6 +4588,11 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="-106.68" y1="106.68" x2="-106.68" y2="109.22" width="0.1524" layer="91"/>
 <label x="-106.68" y="109.22" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="SDO_M"/>
+<wire x1="175.26" y1="-73.66" x2="175.26" y2="-78.74" width="0.1524" layer="91"/>
+<label x="175.26" y="-78.74" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$18" class="0">
