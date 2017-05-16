@@ -2587,6 +2587,10 @@
 <rectangle x1="0.254" y1="3.6068" x2="0.4572" y2="3.7084" layer="21"/>
 <rectangle x1="2.1844" y1="3.6068" x2="2.3876" y2="3.7084" layer="21"/>
 <rectangle x1="2.1844" y1="3.7084" x2="2.3876" y2="3.81" layer="21"/>
+<wire x1="-0.35" y1="4.1" x2="-0.35" y2="0" width="0.127" layer="39"/>
+<wire x1="-0.35" y1="0" x2="6.8" y2="0" width="0.127" layer="39"/>
+<wire x1="6.8" y1="0" x2="6.8" y2="4.1" width="0.127" layer="39"/>
+<wire x1="6.8" y1="4.1" x2="-0.35" y2="4.1" width="0.127" layer="39"/>
 </package>
 </packages>
 </library>
@@ -2930,7 +2934,7 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="754-1795-1-ND" x="16.129" y="35.4965" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Kingbright" x="16.129" y="35.4965" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="APT2012ZGCK" x="16.129" y="35.4965" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="REVIEWER" value="" x="16.129" y="35.4965" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="REVIEWER" value="Group3" x="16.129" y="35.4965" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="FRONT_LED_2" library="LEDs" package="KINGBRIGHT_LED" value="GREEN" x="-21.2725" y="35.2425">
 <attribute name="CREATOR" value="Chris Miranda" x="-21.2725" y="35.2425" size="1.778" layer="27" display="off"/>
@@ -2938,7 +2942,7 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="754-1795-1-ND" x="-21.2725" y="35.2425" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Kingbright" x="-21.2725" y="35.2425" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="APT2012ZGCK" x="-21.2725" y="35.2425" size="1.778" layer="27" display="off"/>
-<attribute name="REVIEWER" value="" x="-21.2725" y="35.2425" size="1.778" layer="27" display="off"/>
+<attribute name="REVIEWER" value="Group3" x="-21.2725" y="35.2425" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J4" library="quadparts_prebuilt" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="34.29" y="-20.0025" rot="R270">
 <attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" x="34.29" y="-20.0025" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2970,7 +2974,7 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="none" x="-6.985" y="15.24" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MFR" value="none" x="-6.985" y="15.24" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="none" x="-6.985" y="15.24" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="REVIEWER" value="" x="-6.985" y="15.24" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="REVIEWER" value="Group3" x="-6.985" y="15.24" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="POWER_SWITCH" library="quadparts_jay" package="MALE_HEADER_2X1_0.1IN" value="" x="15.8115" y="30.9245" rot="R180">
 <attribute name="CREATOR" value="SWANSON" x="15.8115" y="30.9245" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2978,7 +2982,7 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="3M9447-ND" x="15.8115" y="30.9245" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="3M" x="15.8115" y="30.9245" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="961102-6404-AR" x="15.8115" y="30.9245" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="REVIEWER" value="" x="15.8115" y="30.9245" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="REVIEWER" value="Group3" x="15.8115" y="30.9245" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R10" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="2.2225" y="45.4025" rot="R180">
 <attribute name="DIST" value="Digikey" x="2.2225" y="45.4025" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3036,7 +3040,7 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" x="49.53" y="-2.54" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Vishay Siliconix" x="49.53" y="-2.54" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="SI2302CDS-T1-E3" x="49.53" y="-2.54" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="REVIEWER" value="" x="49.53" y="-2.54" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="REVIEWER" value="Group3" x="49.53" y="-2.54" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$2" library="quadparts_jay" package="MOFSET_SI2302CDS-T1-E3CT-ND" value="" x="2.2225" y="49.53">
 <attribute name="CREATOR" value="Jay Ives" x="2.2225" y="49.53" size="1.778" layer="27" display="off"/>
@@ -3044,7 +3048,7 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" x="2.2225" y="49.53" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Vishay Siliconix" x="2.2225" y="49.53" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="SI2302CDS-T1-E3" x="2.2225" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="REVIEWER" value="" x="2.2225" y="49.53" size="1.778" layer="27" display="off"/>
+<attribute name="REVIEWER" value="Group3" x="2.2225" y="49.53" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$3" library="quadparts_jay" package="MOFSET_SI2302CDS-T1-E3CT-ND" value="" x="-2.2225" y="-49.8475" rot="R180">
 <attribute name="CREATOR" value="Jay Ives" x="-2.2225" y="-49.8475" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3052,7 +3056,7 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" x="-2.2225" y="-49.8475" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Vishay Siliconix" x="-2.2225" y="-49.8475" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="SI2302CDS-T1-E3" x="-2.2225" y="-49.8475" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="REVIEWER" value="" x="-2.2225" y="-49.8475" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="REVIEWER" value="Group3" x="-2.2225" y="-49.8475" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U$4" library="quadparts_jay" package="MOFSET_SI2302CDS-T1-E3CT-ND" value="" x="-48.895" y="2.54" rot="R90">
 <attribute name="CREATOR" value="Jay Ives" x="-48.895" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3060,7 +3064,7 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" x="-48.895" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Vishay Siliconix" x="-48.895" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="SI2302CDS-T1-E3" x="-48.895" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="REVIEWER" value="" x="-48.895" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="REVIEWER" value="Group3" x="-48.895" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$5" library="quadparts_jay" package="IMU_497-14946-1-ND" value="IMU_497-14946-1-ND" x="0" y="0">
 <attribute name="CREATOR" value="Jay Ives" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -3068,7 +3072,7 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="497-14946-1-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="STMicroelectronics" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LSM9DS1TR" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="REVIEWER" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="REVIEWER" value="Group3" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="VOLTAGE_REGULATOR" library="quadparts_prebuilt" package="SOT23-DBV" value="TPS73633-DBVT" x="-14.9225" y="20.955" rot="MR180">
 <attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/lp3985.pdf" x="-14.9225" y="20.955" size="1.778" layer="28" rot="MR180" display="off"/>

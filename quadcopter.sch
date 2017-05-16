@@ -3377,7 +3377,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND"/>
 <attribute name="MFR" value="Vishay Siliconix"/>
 <attribute name="MPN" value="SI2302CDS-T1-E3"/>
-<attribute name="REVIEWER" value=""/>
+<attribute name="REVIEWER" value="Group3"/>
 </technology>
 </technologies>
 </device>
@@ -3422,7 +3422,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <attribute name="DISTPN" value="497-14946-1-ND"/>
 <attribute name="MFR" value="STMicroelectronics"/>
 <attribute name="MPN" value="LSM9DS1TR"/>
-<attribute name="REVIEWER" value=""/>
+<attribute name="REVIEWER" value="Group3"/>
 </technology>
 </technologies>
 </device>
@@ -3446,7 +3446,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <attribute name="DISTPN" value="3M9447-ND"/>
 <attribute name="MFR" value="3M"/>
 <attribute name="MPN" value="961102-6404-AR"/>
-<attribute name="REVIEWER" value=""/>
+<attribute name="REVIEWER" value="Group3"/>
 </technology>
 </technologies>
 </device>
@@ -3469,7 +3469,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <attribute name="DISTPN" value="none"/>
 <attribute name="MFR" value="none"/>
 <attribute name="MPN" value="none"/>
-<attribute name="REVIEWER" value=""/>
+<attribute name="REVIEWER" value="Group3"/>
 </technology>
 </technologies>
 </device>
@@ -3526,7 +3526,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <attribute name="DISTPN" value="754-1795-1-ND"/>
 <attribute name="MFR" value="Kingbright"/>
 <attribute name="MPN" value="APT2012ZGCK"/>
-<attribute name="REVIEWER" value="" constant="no"/>
+<attribute name="REVIEWER" value="Group3"/>
 </technology>
 </technologies>
 </device>
@@ -4897,35 +4897,11 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 </sheet>
 </sheets>
 <errors>
-<approved hash="106,1,88.9,45.72,A0,,,,,"/>
-<approved hash="106,1,88.9,43.18,A1,,,,,"/>
-<approved hash="106,1,88.9,40.64,A2,,,,,"/>
-<approved hash="106,1,88.9,38.1,A3,,,,,"/>
-<approved hash="106,1,88.9,35.56,A4,,,,,"/>
-<approved hash="106,1,88.9,33.02,A5,,,,,"/>
-<approved hash="106,1,88.9,30.48,A6,,,,,"/>
-<approved hash="106,1,88.9,27.94,A7,,,,,"/>
-<approved hash="106,1,88.9,48.26,AREF,,,,,"/>
-<approved hash="106,1,33.02,88.9,PB4,,,,,"/>
-<approved hash="106,1,33.02,66.04,PD4,,,,,"/>
-<approved hash="106,1,33.02,63.5,PD5,,,,,"/>
-<approved hash="106,1,33.02,60.96,PD6,,,,,"/>
-<approved hash="106,1,33.02,58.42,PD7,,,,,"/>
-<approved hash="106,1,33.02,48.26,PE2,,,,,"/>
-<approved hash="106,1,33.02,38.1,PE6,,,,,"/>
-<approved hash="106,1,33.02,35.56,PE7,,,,,"/>
-<approved hash="106,1,33.02,30.48,PG0,,,,,"/>
-<approved hash="106,1,33.02,27.94,PG1,,,,,"/>
-<approved hash="106,1,33.02,25.4,PG2,,,,,"/>
-<approved hash="106,1,33.02,17.78,PG5,,,,,"/>
-<approved hash="106,1,88.9,88.9,RSTON,,,,,"/>
-<approved hash="106,1,33.02,99.06,SSN,,,,,"/>
 <approved hash="113,1,347.472,93.98,U$1,,,,,"/>
 <approved hash="113,1,287.782,93.98,U$2,,,,,"/>
 <approved hash="113,1,344.932,17.78,U$3,,,,,"/>
 <approved hash="113,1,287.782,19.05,U$4,,,,,"/>
 <approved hash="113,1,1.46473,-27.6186,POWER_SWITCH,,,,,"/>
-<approved hash="113,1,111.76,56.6208,Y1,,,,,"/>
 <approved hash="113,1,303.316,-26.8647,DEBUGGING_HEADER,,,,,"/>
 </errors>
 </schematic>
