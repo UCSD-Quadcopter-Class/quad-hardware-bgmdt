@@ -3484,16 +3484,16 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <smd name="P$2" x="2.35" y="0" dx="1.25" dy="1.1" layer="1" rot="R180"/>
 <text x="-0.6" y="1.1" size="0.88" layer="25">&gt;NAME</text>
 <text x="-0.6" y="-1.9" size="0.88" layer="27">&gt;VALUE</text>
-<wire x1="-0.8" y1="0.5" x2="-0.8" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="0.7" x2="-0.6" y2="0.7" width="0.127" layer="21"/>
-<wire x1="2.9" y1="0.7" x2="3.1" y2="0.7" width="0.127" layer="21"/>
-<wire x1="3.1" y1="0.7" x2="3.1" y2="0.5" width="0.127" layer="21"/>
-<wire x1="3.1" y1="-0.4" x2="3.1" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="3.1" y1="-0.7" x2="2.9" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.5" x2="-0.8" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.7" x2="-0.5" y2="-0.7" width="0.127" layer="21"/>
 <circle x="-1.2" y="0.1" radius="0.1" width="0.2" layer="21"/>
 <rectangle x1="-0.8" y1="-0.7" x2="3.1" y2="0.7" layer="39"/>
+<wire x1="-0.875" y1="0.775" x2="-0.6" y2="0.775" width="0.127" layer="21"/>
+<wire x1="-0.875" y1="0.775" x2="-0.875" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.875" y1="-0.775" x2="-0.6" y2="-0.775" width="0.127" layer="21"/>
+<wire x1="-0.875" y1="-0.775" x2="-0.875" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-0.775" x2="2.9" y2="-0.775" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-0.775" x2="3.175" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="3.175" y1="0.775" x2="2.9" y2="0.775" width="0.127" layer="21"/>
+<wire x1="3.175" y1="0.775" x2="3.175" y2="0.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
