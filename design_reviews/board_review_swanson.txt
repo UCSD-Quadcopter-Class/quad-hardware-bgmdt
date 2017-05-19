@@ -5,54 +5,65 @@ Power
 =====
 
 You would put the voltage regulator on top of the board.  It's hard to solder stuff under there.
+-- Put the voltage regulator on top of the board. It's easier to solder stuff above there.
 
 THe wires between yoru battery and the jumper need to be high-current.
+-- The wires between my battery and the jumper are now high-current
 
 DRC
 =====
 
 ok.
+-- OK!
 
 Motor holders
 =====
 
 the sides of your motor holders need to be thicker.
-
+-- Sides of motor holders have been appropriately fattened up.
 
 Pours
 =====
 
 YOur jumper is a long way from teh battery (and close to the propellers -- ouch!).  I would extend your VBAT and BAT_GND pours to come closer to the battery terminals.  It'll make all the wires shorter and get the jumper away from the props.
+-- Jumper is now closer to the battery (and further from the propellers!). I extended my VBAT and BAT_GND pours to come closer
+to the battery terminals. It made all the wires shorter and got the jumper away from the props.
 
 THe hole in your GND pour is bigger than it needs to be and it's causing a bunch of extra wires.  The whole under the IMU only need to be right under the IMU.  ANd it's better if the whole is smaller.
+-- Plugged Hole. Pour under IMU is now smaller and GND.
 
 I would also put GND on layer 2 and power on underneath that.
-
+-- GND now on layer 2 and power on 15. Same for BAT_GND and VBAT.
 
 
 Antenna
 =====
 
 Your antenna is surrounded by a faraday cage.  It should stick out!  See red board.
+-- Saw red board.
 
 The wires to your antenna need to be straight (as possible), parallel and the same length.
-
+-- Asked wires nicely to straighten out, be parallel, and the same lenght. Wires complied.
 
 Oscillator
 =====
 
 ok.
+-- OK.
 
 decoupling
 =====
 
 Your decoupling caps are too far from teh IMU and microcontroller.  Same for the other caps that connect pins to ground through caps.
+-- I think I've fixed this? The 5 caps connected to the IMU are now directly next to where they need to be. C28 and
+C31 are one level up, but still only .15in away from their connection. The two decoupling diodes for the uController have also been moved to as close as possible.
 
 
 Voltage regulator
 =====
 
 ok.
+-- OK!
 
 
 Reset button
@@ -64,6 +75,7 @@ Jumper
 =====
 
 see above.
+-- See above.
 
 Misc
 =====
