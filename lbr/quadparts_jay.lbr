@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="no" active="yes"/>
@@ -584,21 +584,19 @@
 <wire x1="-3.05" y1="-2.775" x2="-3.05" y2="2.8" width="0.127" layer="39"/>
 </package>
 <package name="MOFSET_SI2302CDS-T1-E3CT-ND">
-<wire x1="-1.4" y1="1.2" x2="-1.4" y2="1.4" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="1.4" x2="-1.2" y2="1.4" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="-1.2" x2="-1.4" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="1.2" y1="1.4" x2="1.4" y2="1.4" width="0.127" layer="21"/>
-<wire x1="1.4" y1="1.4" x2="1.4" y2="1.2" width="0.127" layer="21"/>
-<wire x1="1.4" y1="-1.2" x2="1.4" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.525" y1="1.2" x2="-1.525" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-1.525" y1="-1.2" x2="-1.525" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.525" y1="1.4" x2="1.525" y2="1.2" width="0.127" layer="21"/>
+<wire x1="1.525" y1="-1.2" x2="1.525" y2="-1.4" width="0.127" layer="21"/>
 <text x="1.8" y="0.25" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 <text x="1.85" y="-0.45" size="0.6096" layer="27" font="vector">&gt;VALUE</text>
-<smd name="P$3" x="0" y="1.734" dx="2.224" dy="0.559" layer="1" rot="R90"/>
-<smd name="P$1" x="-1.0325" y="-1.734" dx="2.224" dy="0.559" layer="1" rot="R270"/>
-<smd name="P$2" x="1.0325" y="-1.734" dx="2.224" dy="0.559" layer="1" rot="R270"/>
 <wire x1="-1.6" y1="3" x2="1.6" y2="3" width="0.127" layer="39"/>
 <wire x1="1.6" y1="3" x2="1.6" y2="-3" width="0.127" layer="39"/>
 <wire x1="1.6" y1="-3" x2="-1.6" y2="-3" width="0.127" layer="39"/>
 <wire x1="-1.6" y1="-3" x2="-1.6" y2="3" width="0.127" layer="39"/>
+<smd name="P$4" x="-0.95" y="-1.65" dx="2.5" dy="1" layer="1" rot="R90"/>
+<smd name="P$5" x="0.95" y="-1.65" dx="2.5" dy="1" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="1.375" dx="2.9" dy="3.05" layer="1"/>
 </package>
 <package name="NET_BRIDGE">
 <smd name="P$1" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
@@ -1215,9 +1213,9 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <devices>
 <device name="" package="MOFSET_SI2302CDS-T1-E3CT-ND">
 <connects>
-<connect gate="G$1" pin="D" pad="P$3"/>
-<connect gate="G$1" pin="G" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
+<connect gate="G$1" pin="D" pad="P$1"/>
+<connect gate="G$1" pin="G" pad="P$4"/>
+<connect gate="G$1" pin="S" pad="P$5"/>
 </connects>
 <technologies>
 <technology name="">
