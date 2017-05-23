@@ -83,7 +83,24 @@ Misc
 =====
 
 You are using the wrong diode.  you want the 360-MV part.
--- Really thought we were? I'm guessing you mean on the motor arms. Our schematic (and board) show the diodes as the 360Mv schottky diodes.
+-- Discussed in class. Diodes are correct.
 
 THe pads on your mosfets are too small.  See page 6 of datasheet.
 -- Enlarged Pads
+
+commit 23b79bf8addaea7e7f68bcb01701b0255b084b3d
+
+wrong caps on AVDD and DVDD on microcontroller
+
+C24 should connect to bAT GND
+
+Serial line pins are wrong. rx and tx need to cross.
+
+You have a long wire of BATGND from your battery to the top motor controller.  Make it run throught BATGND pour. 
+
+THe sides of the motor holders still see kinda thin.
+
+
+You've put all the decoupling caps around your imu.  Some of them need to be near your microcontroller :C8  and C7.
+
+
