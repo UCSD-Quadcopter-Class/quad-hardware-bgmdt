@@ -83,7 +83,7 @@ Misc
 =====
 
 You are using the wrong diode.  you want the 360-MV part.
--- Discussed in class. Diodes are the right diodes now.
+-- Discussed in class. Diodes are correct.
 
 THe pads on your mosfets are too small.  See page 6 of datasheet.
 -- Enlarged Pads
