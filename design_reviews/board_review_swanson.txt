@@ -70,6 +70,8 @@ Reset button
 =====
 
 YOu don't have a reset button.
+-- Added a button that connects the reset line to ground. I'm guessing this pulls RSTN to ground? I'm pretty sure this is how
+this works? The uController schematic seems to state the the uController resets when RSTN is low.
 
 Jumper
 =====
@@ -81,5 +83,7 @@ Misc
 =====
 
 You are using the wrong diode.  you want the 360-MV part.
+-- Really thought we were? I'm guessing you mean on the motor arms. Our schematic (and board) show the diodes as the 360Mv schottky diodes.
 
 THe pads on your mosfets are too small.  See page 6 of datasheet.
+-- Enlarged Pads
