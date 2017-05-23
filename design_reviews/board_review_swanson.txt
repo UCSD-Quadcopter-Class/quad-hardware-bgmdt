@@ -91,16 +91,20 @@ THe pads on your mosfets are too small.  See page 6 of datasheet.
 commit 23b79bf8addaea7e7f68bcb01701b0255b084b3d
 
 wrong caps on AVDD and DVDD on microcontroller
+-- Replaced 12pf caps with 1uf caps for AVDD and DVDD
 
 C24 should connect to bAT GND
+-- C24 now connects to BAT_GND instead of GND
 
 Serial line pins are wrong. rx and tx need to cross.
+-- Fixed Serial Line pins on FTDI_Basic
 
 You have a long wire of BATGND from your battery to the top motor controller.  Make it run throught BATGND pour. 
+-- Done. 
 
 THe sides of the motor holders still see kinda thin.
-
+-- Added 0.05in to each side, arms are now 12.7mm across. Giving a width of 2mm where motors connect to arms.
 
 You've put all the decoupling caps around your imu.  Some of them need to be near your microcontroller :C8  and C7.
-
+ -- Moved C8 and C7 down to be close to the microcontroller. 
 
