@@ -17,3 +17,16 @@ other notes:
 
 4.  I'm worried your custom LEDs may be too dimm.  Check upper-left graph on page 3 of the datasheet. 
 
+commit 55394150efb0d79bb53ca4fe46d08080b17c42ce
+
+Your vreg out put is not connected V.
+
+Your regulated 3-volt signal is not calle 3V.
+
+AVDD and DVDD have the wrong caps.
+
+TX and R:X on your serial port are backwards. (see red board)
+
+C24 should connect to BAT_GND
+
+
