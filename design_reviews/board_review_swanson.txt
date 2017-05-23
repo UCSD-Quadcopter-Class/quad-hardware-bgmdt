@@ -83,7 +83,7 @@ Misc
 =====
 
 You are using the wrong diode.  you want the 360-MV part.
--- Really thought we were? I'm guessing you mean on the motor arms. Our schematic (and board) show the diodes as the 360Mv schottky diodes.
+-- Discussed in class. Diodes are the right diodes now.
 
 THe pads on your mosfets are too small.  See page 6 of datasheet.
 -- Enlarged Pads
