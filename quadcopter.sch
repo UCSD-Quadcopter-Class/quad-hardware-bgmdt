@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3760,8 +3760,6 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <part name="C13" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 <part name="U2" library="quadparts_prebuilt" deviceset="ATMEGA128RFA1" device=""/>
 <part name="R16" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
-<part name="C14" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-12PF" value="12pF"/>
-<part name="C15" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-12PF" value="12pF"/>
 <part name="Y2" library="quadparts_prebuilt" deviceset="CRYSTAL" device="5X3"/>
 <part name="C16" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-12PF" value="12pF"/>
 <part name="C18" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-12PF" value="12pF"/>
@@ -3771,6 +3769,8 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <part name="U$11" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="U$12" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="SW1" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
+<part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
+<part name="C2" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -3872,8 +3872,6 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <instance part="C13" gate="G$1" x="133.35" y="139.7" rot="R90"/>
 <instance part="U2" gate="G$1" x="-59.69" y="60.96"/>
 <instance part="R16" gate="G$1" x="-106.68" y="101.6" rot="R90"/>
-<instance part="C14" gate="G$1" x="-149.86" y="45.72"/>
-<instance part="C15" gate="G$1" x="-140.97" y="45.72"/>
 <instance part="Y2" gate="G$1" x="-124.46" y="58.42"/>
 <instance part="C16" gate="G$1" x="-129.54" y="52.07"/>
 <instance part="C18" gate="G$1" x="-119.38" y="52.07"/>
@@ -3883,6 +3881,8 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <instance part="U$11" gate="G$1" x="342.9" y="118.11"/>
 <instance part="U$12" gate="G$1" x="340.36" y="41.91"/>
 <instance part="SW1" gate="G$1" x="-127" y="91.44"/>
+<instance part="C1" gate="G$1" x="-149.86" y="45.72"/>
+<instance part="C2" gate="G$1" x="-140.97" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -3972,11 +3972,6 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="226.06" y="-55.88" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="-60.96" x2="-12.7" y2="-58.42" width="0.1524" layer="91"/>
-<label x="-12.7" y="-58.42" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="-96.52" x2="93.98" y2="-96.52" width="0.1524" layer="91"/>
 <label x="93.98" y="-96.52" size="1.778" layer="95" xref="yes"/>
@@ -4039,14 +4034,14 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <label x="-90.17" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="-149.86" y1="40.64" x2="-149.86" y2="34.29" width="0.1524" layer="91"/>
 <label x="-149.86" y="34.29" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="-140.97" y1="40.64" x2="-140.97" y2="34.29" width="0.1524" layer="91"/>
 <label x="-140.97" y="34.29" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="AVSS"/>
@@ -4085,7 +4080,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="U2" gate="G$1" pin="DVDD"/>
 <wire x1="-87.63" y1="66.04" x2="-140.97" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-140.97" y1="66.04" x2="-140.97" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AVDD" class="0">
@@ -4093,7 +4088,7 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="U2" gate="G$1" pin="AVDD"/>
 <wire x1="-87.63" y1="68.58" x2="-149.86" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-149.86" y1="68.58" x2="-149.86" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RFANT" class="1">
@@ -4310,26 +4305,26 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 </net>
 <net name="TX0" class="0">
 <segment>
-<wire x1="123.19" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
-<label x="142.24" y="142.24" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="PE1(TXD0)"/>
 <wire x1="-31.75" y1="53.34" x2="-29.21" y2="53.34" width="0.1524" layer="91"/>
 <label x="-29.21" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="123.19" y1="142.24" x2="138.43" y2="142.24" width="0.1524" layer="91"/>
+<label x="138.43" y="142.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RX0" class="0">
-<segment>
-<wire x1="123.19" y1="144.78" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
-<label x="142.24" y="144.78" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="3"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PE0(RXD0/PCINT8)"/>
 <wire x1="-31.75" y1="55.88" x2="-29.21" y2="55.88" width="0.1524" layer="91"/>
 <label x="-29.21" y="55.88" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="3"/>
+<wire x1="123.19" y1="144.78" x2="138.43" y2="144.78" width="0.1524" layer="91"/>
+<label x="138.43" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PD7" class="0">
@@ -4362,26 +4357,26 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 </net>
 <net name="TX1" class="0">
 <segment>
-<wire x1="185.42" y1="151.13" x2="187.96" y2="151.13" width="0.1524" layer="91"/>
-<label x="187.96" y="151.13" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP3" gate="G$1" pin="3"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="PD3(TXD1/INT3)"/>
 <wire x1="-31.75" y1="71.12" x2="-29.21" y2="71.12" width="0.1524" layer="91"/>
 <label x="-29.21" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="148.59" x2="191.77" y2="148.59" width="0.1524" layer="91"/>
+<label x="191.77" y="148.59" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RX1" class="0">
-<segment>
-<wire x1="185.42" y1="148.59" x2="187.96" y2="148.59" width="0.1524" layer="91"/>
-<label x="187.96" y="148.59" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PD2(RXD1/INT2)"/>
 <wire x1="-31.75" y1="73.66" x2="-29.21" y2="73.66" width="0.1524" layer="91"/>
 <label x="-29.21" y="73.66" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="3"/>
+<wire x1="185.42" y1="151.13" x2="191.77" y2="151.13" width="0.1524" layer="91"/>
+<label x="191.77" y="151.13" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -4866,6 +4861,11 @@ I have no idea what a MOFSET does, but if you were looking for one, this is it.<
 <pinref part="BATT1" gate="G$1" pin="N"/>
 <wire x1="10.16" y1="-53.34" x2="12.7" y2="-53.34" width="0.1524" layer="91"/>
 <label x="12.7" y="-53.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="-60.96" x2="-12.7" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-12.7" y="-58.42" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="V" class="0">

@@ -1,13 +1,13 @@
 EAGLE AutoRouter Statistics:
 
-Job           : M:/Documents/eagle/quad-hardware-bgmdt/quadcopter.brd
+Job           : C:/Users/ajive/Documents/eagle/quad-hardware-bgmdt/quadcopter.brd
 
-Start at      : 04:20:31 (5/23/2017)
+Start at      : 11:34:38 (5/23/2017)
 End at        : 16:00:00 (12/31/1969)
 Elapsed time  : 00:00:00
 
-Signals       :    69   RoutingGrid: 12.5 mil  Layers: 2
-Connections   :   169   predefined:  169 ( 45 Vias )
+Signals       :    70   RoutingGrid: 12.5 mil  Layers: 2
+Connections   :   169   predefined:  169 ( 48 Vias )
 
 Router memory :   0
 
